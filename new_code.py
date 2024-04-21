@@ -7,4 +7,4 @@ df = pd.DataFrame([
   ["h", "h0"],
   ["h", "h1"]
 ], columns=["A", "B"])
-print(df.groupby("A").nth[1:-1])
+print(df.groupby("A").nth([1, -1]))
